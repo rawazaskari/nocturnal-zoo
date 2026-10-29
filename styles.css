@@ -70,11 +70,60 @@ a {
 
 
 /* ===== Grid layout (Role A) ===== */
+.site-header {
+    grid-area: header;
+}
 
+.site-nav {
+    grid-area: nav;
+}
+
+.site-main {
+    grid-area: main;
+}
+
+.site-footer {
+    grid-area: footer;
+}
+
+.page {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+@media (min-width: 40rem) {
+    .page {
+        grid-template-columns: 12rem 1fr;
+        grid-template-areas:
+            "header header"
+            "nav    main"
+            "footer footer";
+    }
+}
 
 
 /* ===== Navigation menu (Role B) ===== */
+.site-nav ul {
+    display: none;
+}
 
+.site-nav ul.open {
+    display: block;
+}
+
+@media (min-width: 40rem) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .site-nav ul {
+        display: block;
+    }
+}
 
 
 /* ===== Dark mode (Role C) ===== */
