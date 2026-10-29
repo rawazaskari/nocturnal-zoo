@@ -14,7 +14,7 @@
         </header>
 
         <nav class="site-nav">
-            <button class="nav-toggle">&#9776; Menu</button>
+            <button type="button" class="nav-toggle">&#9776; Menu</button>
             <ul>
                 <li><a href="#owl">Owl</a></li>
                 <li><a href="#bat">Bat</a></li>
@@ -24,7 +24,10 @@
 
         <main class="site-main">
             <figure class="hero">
-                <img src="images/owl-asleep.jpg" alt="A great horned owl: sleeping by day, wide awake by night">
+                <picture>
+                    <source srcset="owl-awake.jpg" media="(prefers-color-scheme: dark)">
+                    <img src="owl-asleep.jpg" alt="A great horned owl: sleeping by day, wide awake by night">
+                </picture>
                 <figcaption>
                     Shhh! Our owl keeps unusual hours.<br>
                     <small>Photos: <a href="https://commons.wikimedia.org/wiki/File:Owl_sleeping_in_tree.jpg">Kasia</a> (CC BY 2.0, cropped); <a href="https://commons.wikimedia.org/wiki/File:Great_Horned_Owl,_Evening_(37903083162).jpg">Great Sand Dunes NPS</a> (public domain).</small>
@@ -48,7 +51,7 @@
         </main>
 
         <footer class="site-footer">
-            <p class="credits">Built by: Jacob Moore, Rawaz Askari</p>
+            <p class="credits">Built by: Jacob Moore, Rawaz Askari, Andrew Warner</p>
         </footer>
     </div>
     <script src="nav.js"></script>
