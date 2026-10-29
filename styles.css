@@ -3,7 +3,7 @@
 :root {
     --bg: #fdf6e3;
     --fg: #2b2b2b;
-    --accent: #7a4fd6;
+    --accent: #10469e;
 }
 
 body {
@@ -74,7 +74,23 @@ a {
 
 
 /* ===== Navigation menu (Role B) ===== */
+.site-nav ul {
+    display: none;
+}
 
+.site-nav ul.open {
+    display: block;
+}
+
+@media (min-width: 40rem) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .site-nav ul {
+        display: block;
+    }
+}
 
 
 /* ===== Dark mode (Role C) ===== */
