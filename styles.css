@@ -3,7 +3,7 @@
 :root {
     --bg: #fdf6e3;
     --fg: #2b2b2b;
-    --accent: #7a4fd6;
+    --accent: #01a601;
 }
 
 body {
@@ -78,7 +78,13 @@ a {
 
 
 /* ===== Dark mode (Role C) ===== */
-
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #1b1b2f;
+        --fg: #e8e8f0;
+        --accent: #00db00;
+    }
+}
 
 
 /* ===== Animal cards (Role D, teams of four) ===== */
