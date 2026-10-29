@@ -1,0 +1,84 @@
+/* ===== Basics (shared by everyone) ===== */
+
+:root {
+    --bg: #fdf6e3;
+    --fg: #2b2b2b;
+    --accent: #7a4fd6;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    background: var(--bg);
+    color: var(--fg);
+}
+
+a {
+    color: var(--accent);
+}
+
+.site-header {
+    padding: 1rem;
+    border-bottom: 4px solid var(--accent);
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.site-nav {
+    padding: 1rem;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-main {
+    padding: 1rem;
+}
+
+.hero img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.facts {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.fact {
+    padding: 0 1rem;
+    border: 2px solid var(--accent);
+    border-radius: 0.5rem;
+}
+
+.site-footer {
+    padding: 1rem;
+    border-top: 4px solid var(--accent);
+}
+
+.credits {
+    margin: 0;
+}
+
+
+/* ===== Grid layout (Role A) ===== */
+
+
+
+/* ===== Navigation menu (Role B) ===== */
+
+
+
+/* ===== Dark mode (Role C) ===== */
+
+
+
+/* ===== Animal cards (Role D, teams of four) ===== */
